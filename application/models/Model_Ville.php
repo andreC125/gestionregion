@@ -1,19 +1,15 @@
 <?php
 class Model_Ville extends CI_Model
 {
-
-
-public function getAllVille()
-{
-    $sql = $this->db->get('ville');
-    foreach ($sql->result()as $row)
+    public function GetAllVille()
     {
-        $data[] =$row;
+        $sql =$this->db->select('nomVille','scoreVille')->from('ville')->where('');
+        foreach($res->result() as $row)
+        {
+            $tab[] = $row;
+        }
+        return $tab;
     }
-    return $data;
-}
-
-
 }
 
 ?>

@@ -10,7 +10,7 @@
     
 </head>
 <body>
-<button onclick="myFunction()">Click me</button>
+
     <?php
     
     echo"<h1>$titre.";
